@@ -1,0 +1,22 @@
+package br.com.unixyz.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.unixyz.modelo.Curso;
+
+public class ImplementarCurso {
+
+	public static void main(String[] args) {
+		
+		Curso curso = new Curso (
+				Integer.parseInt(JOptionPane.showInputDialog("ID do curso")),
+				JOptionPane.showInputDialog("Descrição do curso").toUpperCase(),
+				
+				
+				
+				);
+		
+
+	}
+
+}

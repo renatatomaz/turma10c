@@ -1,0 +1,21 @@
+package br.com.colecoes.implementacao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.colecoes.beans.Cargo;
+
+public class TesteListObjeto {
+
+	public static void main(String[] args) {
+		
+		List <Cargo> lista = new ArrayList <Cargo> ();
+		
+		
+		
+		
+		
+
+	}
+
+}

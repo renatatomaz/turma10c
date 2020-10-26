@@ -1,0 +1,22 @@
+package variaveis;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		// Crie as variaveis para armazenar: nome do produto, código, valor e quantidade.
+		// Exiba no final o nome do produto, o total e o total com 10% de desconto.
+		
+		String nomedoproduto = "bolo";
+		int codigo = 1232;
+		double valorproduto = 48.95;
+		int quantidade = 6;
+		double total = valorproduto * quantidade;
+		double desconto = total - (total * 0.10);
+				
+		System.out.println("Nome do produto: " + nomedoproduto);
+		System.out.printf("Valor Total: R$ %.2f\n", total);
+		System.out.printf("Valor com Desconto: R$ %.2f\n", desconto);
+		
+	}
+
+}

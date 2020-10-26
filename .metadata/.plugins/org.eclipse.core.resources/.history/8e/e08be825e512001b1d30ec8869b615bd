@@ -1,0 +1,37 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioLista2 {
+
+	public static void main(String[] args) {
+		/*
+		 * Um hotel cobra R$ 80,00 a diária e mais uma taxa de serviços. 
+		 * A taxa de serviços é de: 
+		 * •	R$ 5,50 por diária, se o número de diárias for maior que 15; 
+		 * •	R$ 6,00 por diária, se o número de diárias for igual a 15; 
+		 * •	R$ 8,00 por diária, se o número de diárias for menor que 15.
+		 * Monte uma aplicação que apresente a conta do cliente.
+		 */
+
+		String cliente = JOptionPane.showInputDialog("Informe o nome do Cliente");
+		short diarias = Short.parseShort(JOptionPane.showInputDialog("Informe o número de diarias"));
+		double valorDiaria = 80.00;
+		double taxaMenor = 8.00;
+		double taxaIgual = 6.00;
+		double taxaMaior = 5.50;
+		
+		
+		System.out.println("Cliente: " + cliente);
+
+		if (diarias < 15) {
+			double totalConta = valorDiaria * diarias * taxaMenor ;
+			System.out.println("Total período: " + totalConta);
+		} else
+			if (diarias == 15) {
+				double totalConta = valorDiaria * diarias * taxaIgual ;
+				System.out.println("Total período: " + totalConta);
+			}
+	}
+
+}

@@ -1,0 +1,10 @@
+package br.com.colecoes.implementacao;
+
+public class TesteListObjeto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

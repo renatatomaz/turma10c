@@ -1,0 +1,31 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioRepeticao {
+
+	public static void main(String[] args) {
+		
+		String escolaridade = "";
+		int totalMedio = 0;
+		int totalSuperior = 0;
+		int totalPos = 0;
+		
+		do {
+			escolaridade = JOptionPane.showInputDialog("Informe sua escolaridade").toUpperCase();
+			if (escolaridade.equals("MEDIO")) {
+				totalMedio = totalMedio +1 ;
+			} if (escolaridade.equals("SUPERIOR")) {
+				totalSuperior ++;
+			} else if (escolaridade.equals("POS")) {
+				totalPos ++;
+			}
+			
+		} while (escolaridade.equals("MEDIO") || escolaridade.equals("SUPERIOR") || escolaridade.equals("POS"));
+		
+		System.out.println("Médio " + totalMedio + "\nSuperior " + totalSuperior + "\nPos " + totalPos);
+		System.out.println("Escolaridade mais informada" );
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioRepeticao2 {
+
+	public static void main(String[] args) {
+		
+		String nome = JOptionPane.showInputDialog("Informe seu nome");
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Informe sua idade"));
+		
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package br.com.concessionaria.modelo;
+
+public class Formula1 {
+	String cor;
+	String escuderia;
+	boolean status;
+	float velocidadeAtual;
+	float valor;
+	
+}

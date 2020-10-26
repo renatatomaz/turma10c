@@ -1,0 +1,15 @@
+package br.com.unixyz.modelo;
+
+/*
+ * Design Patterns => DTO (Data Transfer Object)
+ * - Todo atributo DEVE ser privado.
+ * - Cada atributo deve possuir UM método de INPUT e UM método de OUTPUT.
+ */
+
+public class Aluno {
+
+	private int rm;
+	private String nome;
+	private String email;
+	
+}

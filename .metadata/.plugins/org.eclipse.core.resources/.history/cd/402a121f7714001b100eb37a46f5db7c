@@ -1,0 +1,17 @@
+package br.com.unixyz.implementacao;
+
+import br.com.unixyz.modelo.Curso;
+
+public class ImplementarCurso {
+
+	public static void main(String[] args) {
+		
+		Curso curso = new Curso (
+				
+				
+				);
+		
+
+	}
+
+}

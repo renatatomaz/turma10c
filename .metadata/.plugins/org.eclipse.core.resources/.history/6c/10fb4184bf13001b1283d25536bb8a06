@@ -1,0 +1,20 @@
+package br.com.concessionaria.modelo;
+
+public class Formula1 {
+	private String cor;
+	private String escuderia;
+	private boolean status;
+	private float velocidadeAtual;
+	private float valor;
+	
+	//Sintase para os metodos
+	// <modificador> <tipo do retorno> <nome do metodo> (<TipoParam> <nomeParam>) {
+	public void preencherEscuderia (String pEscuderia) {
+		escuderia = pEscuderia.toUpperCase();
+	}
+	
+	
+	
+	
+	
+} // fechar classe

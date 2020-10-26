@@ -1,0 +1,38 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioRepeticao2 {
+
+	public static void main(String[] args) {
+		
+		//String nome1 = JOptionPane.showInputDialog("Informe seu nome");
+		//int idade1 = Integer.parseInt(JOptionPane.showInputDialog("Informe sua idade"));
+		
+	//	System.out.println("Nome: " + nome1 + " - idade: " + idade1 + " anos.");
+		
+		String nome = "";
+		int pessoa = 0;
+		int idade = 0;
+		int somaIdade = 0;
+		int quantidade = 0;
+		int media = 0;
+		
+		do {
+			nome = JOptionPane.showInputDialog("informe seu nome");
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Informe sua idade"));
+			pessoa ++;
+			somaIdade = somaIdade + idade;
+			media = somaIdade / pessoa;
+			
+		} while (nome.length() > 2);
+		
+
+		
+		System.out.println("Soma Idade: " + somaIdade);
+		System.out.println("Média Idade: " + media);
+	}
+	}
+	
+
+}

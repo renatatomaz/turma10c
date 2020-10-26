@@ -1,0 +1,32 @@
+package br.com.unixyz.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.unixyz.modelo.Professor;
+
+public class ImplementarProfessor {
+	
+	public static String s(String msg) { // irá substituir o JOptionPane.showInputDialog (). Para facilitar.
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+	
+	public static int i (String msg) {
+		return Integer.parseInt(s(msg));
+	}
+	
+	public static float (String msg) {
+		return Float.parseFloat(s(msg));
+	}
+		
+	public static void main(String[] args) {
+		
+		Professor prof = new Professor();
+		
+		prof.setId(i("ID"));
+		prof.setNome(s("Nome"));
+		
+
+		
+	}
+
+}

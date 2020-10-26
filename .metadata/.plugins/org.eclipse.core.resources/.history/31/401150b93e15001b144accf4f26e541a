@@ -1,0 +1,22 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.beans.Cliente;
+import br.com.ecommerce.beans.PessoaFisica;
+import br.com.ecommerce.beans.PessoaJuridica;
+import br.com.ecommerce.util.Magica;
+
+public class ImplementarCliente {
+
+	public static void main(String[] args) {
+		Cliente c = new Cliente();
+		
+		int resposta = Magica.i("Digite <1> PF ou <2> PJ");
+		if (resposta == 1) {
+			c = new PessoaFisica ();
+		} else if (resposta == 2) {
+			c = new PessoaJuridica ();
+		}
+
+	}
+
+}

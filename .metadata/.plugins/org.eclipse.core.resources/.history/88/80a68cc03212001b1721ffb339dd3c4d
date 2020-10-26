@@ -1,0 +1,24 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Variavel {
+
+	public static void main(String[] args) {
+		String nome = JOptionPane.showInputDialog("Digite seu nome: ");
+		int idade = JOptionPane.showInputDialog("Digite sua idade: ");
+		double altura = 1.72;
+		double peso = 67.95;
+		double imc = peso / (altura * altura);
+		System.out.print(nome);
+		System.out.print(idade);
+		System.out.println(imc);
+		System.out.println("Usuário: " + nome);
+		System.out.println("Idade: " + idade);
+		// %f => números reais /// %s => Strings /// %d => inteiros
+		System.out.printf("IMC: %.2f\n", imc);
+		System.out.printf("Sr(a) %s, você tem %d anos de idade. Seu IMC é %.2f.\n", nome, idade, imc);
+		
+	}
+
+}

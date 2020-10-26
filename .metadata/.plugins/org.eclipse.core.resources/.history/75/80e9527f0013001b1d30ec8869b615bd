@@ -1,0 +1,19 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploDo {
+
+	public static void main(String[] args) {
+		String candidato = "";
+		int totalVerde = 0;
+		int totalAmarelo = 0;
+		do {
+			candidato = JOptionPane.showInputDialog("Digite <Verde> ou < Amarelo>").toUpperCase();
+		} while (candidato.equals ("VERDE") || candidato.equals("AMARELO"));
+		
+		
+
+	} // chave do metodo main
+
+} // chave classe

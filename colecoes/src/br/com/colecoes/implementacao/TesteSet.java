@@ -1,0 +1,43 @@
+package br.com.colecoes.implementacao;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class TesteSet {
+
+	public static void main(String[] args) {
+		// SET não aceita elementos repetidos, diferente o LIST. 
+		// Mostra o resultado, as informaçoes na sequencia em que ele aloca na memoria.
+		// Não coloca na sequência informada, ele verifica a melhor forma de alocar na memoria e irá apresentar dessa forma.
+		
+		Set <String> lista = new HashSet <String> ();
+		
+		lista.add("DBA");
+		lista.add("ANALISTA");
+		lista.add("INFRA");
+		lista.add("DEVOPS");
+		lista.add("DBA");
+		lista.add("DEV");
+		lista.add("ESTAGIARIO");
+		
+		System.out.println(lista);
+		
+		// Não é possível colocar em ordem alfabetica.
+		// Para o SET é obrigatorio usar o Foreach, o outro FOR não funciona.
+		// SET não existe indice, a ordenação que prevalece é a ordenação de Hash.
+		
+		for (String elemento : lista) {
+			System.out.println("Cargo: " + elemento);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
