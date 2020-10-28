@@ -1,0 +1,8 @@
+sites para baixar:
+
+https://code.visualstudio.com/download
+
+https://devcenter.heroku.com/articles/heroku-cli
+
+Site para deploy: 
+http://heroku.com/
