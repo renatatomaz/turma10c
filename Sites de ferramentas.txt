@@ -6,3 +6,6 @@ https://devcenter.heroku.com/articles/heroku-cli
 
 Site para deploy: 
 http://heroku.com/
+
+Site do BootStrap para ajudar nos comandos:
+https://getbootstrap.com/

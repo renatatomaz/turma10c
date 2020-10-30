@@ -1,11 +1,17 @@
 package br.com.projetofinal.beans;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table (name = "TB_ARTISTA")
@@ -22,7 +28,20 @@ public class Artista {
 	@Column(name = "nacionalidade", length = 30)
 	private String nacionalidade;
 	
+	@JsonIgnoreProperties("artista")
+	@OneToMany(mappedBy = "artista", cascade = CascadeType.ALL)
+	// cascade = Pergunta o que fazer se você alterar ou excluir o artista? Ele irá refletir o mesmo que for feito em musica.
+	private List<Musica> musicas;
 	
+	
+	public List<Musica> getMusicas() {
+		return musicas;
+	}
+
+	public void setMusicas(List<Musica> musicas) {
+		this.musicas = musicas;
+	}
+
 	public Artista() {
 		super();
 	}

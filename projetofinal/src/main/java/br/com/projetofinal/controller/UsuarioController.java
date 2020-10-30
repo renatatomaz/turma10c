@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import br.com.projetofinal.beans.Usuario;
 import br.com.projetofinal.dao.UsuarioDAO;
 
 @RestController // Indica que a classe irá responder protocolo HTTP (GET / POST)
+@CrossOrigin("*") //Libera o acesso externo para o TomCat, permite acessos externos.
 public class UsuarioController {
 	
 	@Autowired // Indica que o gerenciamento do atributo será feito pelo Spring Boot.
