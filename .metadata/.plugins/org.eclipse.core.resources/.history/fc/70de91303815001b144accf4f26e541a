@@ -1,9 +1,0 @@
-package br.com.ecommerce.beans;
-
-public class PessoaFisica {
-
-	private String cpf;
-	private String rg;
-	
-	
-}
